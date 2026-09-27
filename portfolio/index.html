@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panchumarthi Tarun — AIML Undergrad &amp; Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav__mark">PT</a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#log">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <div class="avatar">
+          <img src="images/profile.jpg" alt="Portrait of Panchumarthi Tarun">
+        </div>
+        <h1 class="hero__name">Panchumarthi<br>Tarun</h1>
+        <p class="hero__role">AIML undergraduate — building small systems that make everyday processes easier.</p>
+        <div class="hero__cta">
+          <a href="#log" class="btn btn--primary">See the work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="terminal" id="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot"></span>
+          <span class="terminal__dot"></span>
+          <span class="terminal__dot"></span>
+          <span class="terminal__title">status.sh</span>
+        </div>
+        <div class="terminal__body" id="terminalBody"></div>
+      </div>
+    </div>
+    <div class="hero__scroll">scroll<span class="hero__scroll-line"></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__num">00</span>
+      <h2>About</h2>
+    </div>
+    <div class="about__grid">
+      <figure class="portrait">
+        <img src="images/profile.jpg" alt="Portrait of Panchumarthi Tarun">
+        <figcaption>Panchumarthi Tarun · VVIT</figcaption>
+      </figure>
+      <div class="about__copy">
+        <p class="about__lede">
+          I'm an AIML undergraduate at VVIT with a habit of turning coursework into working software —
+          a records app, a health app, a prediction model — rather than leaving it on paper.
+        </p>
+        <p class="about__body">
+          My interest sits at the point where data meets an interface someone can actually use: Python and
+          machine learning on one side, Java, Flask and Flutter on the other. I like problems with a visible
+          outcome — a dashboard someone checks, an app someone opens — and I'm looking for a team where I can
+          keep building real things and pick up the practices that only come from shipping in production.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / LOG -->
+  <section class="section" id="log">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2>Project log</h2>
+    </div>
+
+    <div class="log">
+
+      <article class="entry" data-entry>
+        <button class="entry__head" aria-expanded="false">
+          <span class="entry__date">Dec 2025 — Mar 2026</span>
+          <span class="entry__title">CampusPass</span>
+          <span class="entry__sub">Student information management system</span>
+          <span class="entry__plus" aria-hidden="true"></span>
+        </button>
+        <div class="entry__body">
+          <p>A team-built Power Apps system for keeping student records, marks and attendance in one
+          place instead of scattered spreadsheets.</p>
+          <ul>
+            <li>Built the application in Microsoft Power Apps for a college records workflow</li>
+            <li>Modelled student records — names, marks, attendance, academic history — into a single connected source</li>
+            <li>Added a counsellor module so guidance notes travel with the student's record</li>
+            <li>Designed dashboards and forms so staff can find and update a record without training</li>
+          </ul>
+          <div class="entry__tags">
+            <span>Power Apps</span><span>Power Automate</span><span>Team project</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <button class="entry__head" aria-expanded="false">
+          <span class="entry__date">Jan 2025 — Apr 2025</span>
+          <span class="entry__title">Seasonal Disease Awareness</span>
+          <span class="entry__sub">Cross-platform Flutter app</span>
+          <span class="entry__plus" aria-hidden="true"></span>
+        </button>
+        <div class="entry__body">
+          <p>A mobile app built solo to put basic, seasonal health guidance in one accessible place.</p>
+          <ul>
+            <li>Built a cross-platform mobile app in Flutter, covering iOS and Android from one codebase</li>
+            <li>Structured content around symptoms, precautions and safety guidance for seasonal illnesses</li>
+            <li>Designed the interface for quick scanning under stress — no hunting for information</li>
+            <li>Added a resource section pointing users to healthcare and emergency support</li>
+          </ul>
+          <div class="entry__tags">
+            <span>Flutter</span><span>Dart</span><span>Individual project</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="entry" data-entry>
+        <button class="entry__head" aria-expanded="false">
+          <span class="entry__date">Sep 2024 — Dec 2024</span>
+          <span class="entry__title">iPhone Price Prediction</span>
+          <span class="entry__sub">Machine learning model</span>
+          <span class="entry__plus" aria-hidden="true"></span>
+        </button>
+        <div class="entry__body">
+          <p>A model that estimates iPhone resale prices from specs and market data — my first full
+          pass through a machine learning pipeline end to end.</p>
+          <ul>
+            <li>Cleaned and preprocessed market and specification data in Python</li>
+            <li>Selected features that actually moved the price rather than adding noise</li>
+            <li>Trained a Random Forest model and tuned it for prediction accuracy</li>
+            <li>Visualised results to check where the model was right — and where it wasn't</li>
+          </ul>
+          <div class="entry__tags">
+            <span>Python</span><span>Random Forest</span><span>Individual project</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills">
+      <div class="skills__group">
+        <h3>Languages</h3>
+        <div class="chips">
+          <span>Java</span><span>Python</span><span>C</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <h3>Tools &amp; frameworks</h3>
+        <div class="chips">
+          <span>GitHub</span><span>VS Code</span><span>Flask</span><span>Flutter</span>
+          <span>Dart</span><span>MS Power Apps</span><span>MS Power Automate</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <h3>Databases</h3>
+        <div class="chips">
+          <span>MS SQL Server</span>
+        </div>
+      </div>
+      <div class="skills__group">
+        <h3>Working style</h3>
+        <div class="chips">
+          <span>Communication</span><span>Time management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2>Education</h2>
+    </div>
+    <ol class="timeline">
+      <li>
+        <span class="timeline__year">In progress</span>
+        <div>
+          <h3>Bachelor's degree — AIML</h3>
+          <p>VVIT · GPA 8.1</p>
+        </div>
+      </li>
+      <li>
+        <span class="timeline__year">2024</span>
+        <div>
+          <h3>Diploma — AIML</h3>
+          <p>St. Mary's · 89%</p>
+        </div>
+      </li>
+      <li>
+        <span class="timeline__year">2024</span>
+        <div>
+          <h3>SSC</h3>
+          <p>MPL High School · 540 / 600</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="section" id="certs">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2>Certificates</h2>
+    </div>
+    <div class="certs">
+      <div class="cert"><h3>NumPy Certification</h3><p>Udemy</p></div>
+      <div class="cert"><h3>Java Certification</h3><p>CodeTantra</p></div>
+      <div class="cert"><h3>Python Certification</h3><p>CodeTantra</p></div>
+      <div class="cert"><h3>Data Analytics</h3><p>HP LIFE</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact">
+      <p class="contact__lede">Open to internship and entry-level developer roles. The fastest way to
+      reach me is email.</p>
+      <div class="contact__links">
+        <a href="mailto:panchumarthit@gmail.com">panchumarthit@gmail.com</a>
+        <a href="tel:+916301511196">+91 630 151 1196</a>
+        <a href="https://linkedin.com/in/arunpanchumarthi" target="_blank" rel="noopener">linkedin.com/in/arunpanchumarthi</a>
+        <a href="https://github.com/tarunpanchumarthi" target="_blank" rel="noopener">github.com/tarunpanchumarthi</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Panchumarthi Tarun — built with plain HTML, CSS and JS.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
